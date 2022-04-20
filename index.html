@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <link rel="shortcut icon" href="./images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="bg"></div>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <!--logo-->
+            <img src="./images/icon/logo.png" class="logo">
+            <!-- <div class="invite" onclick="unlogin()">
+                <div class="inviteimg"></div>
+            </div> -->
+            <div class="online_member">
+                <p>10816</p>
+            </div>
+        </div>
+    </header>
+    <!--main-->
+    <main class="index">
+        <!--圖片輪播-->
+        <div class="ad">
+            <section class="single-item">
+                <img src="./images/banner.png">
+                <img src="./images/banner.png">
+                <img src="./images/banner.png">
+                <img src="./images/banner.png">
+            </section>
+        </div>
+        <!--跑馬燈-->
+        <div class="marqueeBox">
+            <i class="marquee_ic"></i>
+            <div class="marquee">
+                <pre>test test test test</pre>
+            </div>
+        </div>
+        <!--登入區-->
+        <div class="memberArea">
+            <!--大登入按鈕-->
+            <div class="member_icon"></div>
+            <div class="loginBtn display">
+                <!-- <i class="login_ic"></i> -->
+                <span> Đăng nhập </span>
+                <div class="before"></div>
+            </div>
+            <!-- <div class="registerBtn display">
+                <i class="login_ic"></i>
+                <span>註冊</span>
+            </div> -->
+            <!--大登入按鈕登入後樣式-->
+            <div class="alLogin">
+                <ul>
+                    <li>
+                        <i></i>
+                        <div class="lv">Thành viên mới</div>
+                    </li>
+                    <span class="name">user898</span>
+                    <li class="amount">$9883</li>
+                </ul>
+            </div>
+            <!--轉存提+vip-->
+            <div class="operate">
+                <div class="btnBox">
+                    <button onclick="unlogin()">
+                        <i></i>
+                        <span>Nạp tiền</span>
+                    </button>
+                    <button onclick="unlogin()">
+                        <i></i>
+                        <span>Chuyển điểm</span>
+                    </button>
+                    <button onclick="unlogin()">
+                        <i></i>
+                        <span>Rút tiền</span>
+                    </button>
+                    <!-- <button class="vipBtn" onclick="unlogin()">
+                        <div class="vipWord">VIP</div>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        <!--遊戲區-->
+        <div class="homeCenter">
+            <!--遊戲種類選單-->
+            <ul class="gameList">
+                <ol class="gameListBG">
+                    <li class="sportBtn">
+                    <li class="slotBtn active">
+                        <div>
+                            <i class="sport_ic"></i>
+                            <p>SLOTS</p>
+                        </div>
+                    </li>
+                    <li class="fishBtn" onclick="unlogin()">
+                        <div>
+                            <i class="fish_ic"></i>
+                            <p>BẮN CÁ</p>
+                        </div>
+                    </li>
+                    <li class="boardBtn" onclick="unlogin()">
+                        <div>
+                            <i class="board_ic"></i>
+                            <p>GAME BÀI</p>
+                        </div>
+                    </li>
+                    <li class="sportBtn">
+                        <div>
+                            <i class="slot_ic"></i>
+                            <p>THỂ THAO</p>
+                        </div>
+                    </li>
+                    <li class="liveBtn">
+                        <div>
+                            <i class="live_ic"></i>
+                            <p>CASINO</p>
+                        </div>
+                    </li>
+                    <li class="lotteryBtn">
+                        <div>
+                            <i class="lottery_ic"></i>
+                            <p>XỔ SỐ</p>
+                        </div>
+                    </li>
+                </ol>
+            </ul>
+            <!--遊戲選擇-->
+             <ul class="gameBox slotBox display">
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/bng.png">
+                    <p>BNG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/tpg.png">
+                    <p>TPG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/px.png">
+                    <p>PX</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/simplePlay.png">
+                    <p>SimplePlay</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/rsg.png">
+                    <p>RSG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/ifun.png">
+                    <p>IFUN</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="./images/廠商圖/slot/bwin.png">
+                    <p>BWIN</p>
+                </li>
+                <!-- <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/png.png">
+                    <p>PNG</p>
+                </li> -->
+            </ul>
+            <ul class="gameBox liveBox">
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/sa.png">
+                    <p>SA CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/allbet.png">
+                    <p>ALL BAT</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/dg.png">
+                    <p>DG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/wm.png">
+                    <p>WM</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="./images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+            </ul>
+            <ul class="gameBox sportBox">
+                <li class="sportsize" onclick="callSport()">
+                    <img src="./images/廠商圖/sport/36588.png">
+                    <p>36588 SPORTS</p>
+                </li>
+            </ul>
+            <ul class="gameBox lotteryBox">
+                <li class="lotterysize" onclick="callLottery()">
+                    <img src="./images/廠商圖/lottery/rwd.png">
+                    <p>RWD</p>
+                </li>
+                <!-- <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/SG.png">
+                    <p>SG88六合、大樂、539</p>
+                </li>
+                <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/GS.png">
+                    <p>京彩彩票</p>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li class="active" onclick="window.location.href='./index.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="unlogin()">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="unlogin()">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="unlogin()">
+                <i class="service_ic"></i>
+                <!-- <p>客服</p> -->
+            </li>
+            <li onclick="unlogin()">
+                <i class="center_ic"></i>
+                <!-- <p>會員 Ví chính </p> -->
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--請先登入-->
+        <div class="jumpWindow plsGo">
+            <div class="title">Lời nhắc</div>
+            <div class="content">Vui lòng đăng nhập trước</div>
+            <div class="btnBox">
+                <button class="close">Xác nhận</button>
+            </div>
+        </div>
+        <!--登入帳密視窗-->
+        <div class="jumpWindow loginWindow">
+            <div class="title">
+                <div class="icon"></div>
+                <p>Đăng nhập hội viên </p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <label>
+                    <input type="text" placeholder="Tên tài khoản">
+                </label>
+                <label>
+                    <input type="password" placeholder="Mật khẩu ">
+                    <i class="eye"></i>
+                </label>
+                <div class="forget">
+                    <p>Quên <span>mật khẩu</span>?</p>
+                </div>
+                <button type="button" class="realLogin">Đăng nhập</button>
+            </form>
+            <div class="registerBtn">
+                Vẫn chưa phải hội viên? ?<p> Đăng ký hội viên mới </p>
+            </div>
+        </div>
+        <!--忘記密碼-->
+        <div class="jumpWindow forgetWindow">
+            <div class="title">
+                <p>Quên mật khẩu</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <input type="text" placeholder="Vui lòng nhập số điện thoại của bạn">
+                <button>Đặt lại mật khẩu</button>
+                <p class="remind">Chúng tôi sẽ gửi mật khẩu mới đến điện thoại di động của bạn, vui lòng kiểm tra tin nhắn</p>
+            </form>
+        </div> 
+        <!--註冊-->
+        <div class="jumpWindow registerWindow">
+            <div class="title">
+                <div class="icon"></div>
+                <p>Đăng ký hội viên</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <label class="hasRemind">
+                    <input type="text" placeholder="Vui lòng nhập tài khoản">
+                </label>
+                <p class="remind"> Tài khoản phải có một chữ cái tiếng Anh (Viết hoa hay viết thường đều được); ít nhất có sáu ký tự </p>
+                <label class="hasRemind">
+                    <input type="text" placeholder="Nhập mật khẩu">
+                    <i class="eye"></i>
+                </label>
+                <p class="remind"> Có thể sử dụng các số bằng tiếng Anh và các ký hiệu đặc biệt hạn chế (@ ._ $ #% ^ & * + -)  </p>
+                <label>
+                    <input type="text" placeholder="Xác nhận mật khẩu">
+                </label>
+                <label>
+                    <input type="text" placeholder="Mã giới thiệu">
+                </label>
+                <label>
+                    <input type="text" placeholder="Điện thoại di động">
+                    <button type="button" class="cellphoneCheck">Nhận mã xác minh</button>
+                </label>
+                <label>
+                    <input type="text" placeholder="Mã xác minh điện thoại">
+                </label>
+                <label class="isCheck">
+                    <input type="checkbox">
+                    Đã đọc và đồng ý 
+                    <p> Các điều khoản liên quan và chính sách bảo mật </p>
+                </label>
+                <button class="checkBtn">Xác nhận</button>
+            </form>
+        </div>
+        <!--使用條款-->
+        <div class="jumpWindow ruleWindow">
+            <div class="title">
+                <p>Điều khoản sử dụng</p>
+                <i class="close back"></i>
+            </div>
+            <div class="content">
+                <div class="ruleBody">
+                    <h2>Tuân thủ các quy định hội viên và các quy định pháp lệnh:</h2>
+                    <p>Sau khi quý khách đăng ký tài khoản hội viên thành công thì sẽ được sử dụng tất cả các dịch vụ của công ty chúng tôi. Khi sử dụng các dịch vụ đó, đồng nghĩa quý khách đã đồng ý và tuân thủ theo các quy định mà công ty chúng tôi đề ra như (Quy tắc trò chơi Casino, quy tắc đặt cược thể thao, thông báo, các hạng mục chú ý) và một số pháp lệnh có liên quan. Tất cả các dịch vụ liên quan như sản phẩm, dịch vụ khách hàng, hệ thống phần mềm, kèo cược, trò chơi, casino, kết cấu mạng của công ty chúng tôi đều được giám sát bởi ủy ban cờ bạc và giải trí của nước Philippines. Vì vậy khi quý khách sử dụng những dịch vụ của chúng tôi thì phải tuân thủ theo các pháp lệnh hợp pháp của nước bản địa, nếu có vi phạm điều gì đều không thuộc phạm vi trách nhiệm dịch vụ của chúng tôi.</p>
+                    <h2>Giới thiệu dịch vụ:</h2>
+                    <p>Công ty chúng tôi dựa trên nền tảng dịch vụ chất lượng [An Toàn Uy Tín], [Tiện Lợi Kịp Thời], [Công Bằng Công Chính]. Điều tuyệt vời là hội viên không chịu sự gò bó về thời gian mà có thể lên mạng mọi lúc và tham gia một loại trò chơi bất kỳ với tính công bằng tuyệt đối, ngoài ra hội viên có thể cảm nhận học hỏi những điều thú vị cùng với những người chơi khác trên thế giới. Chúng tôi luôn duy trì một thái độ tôn trọng khách hàng, từ đó tìm tòi hiểu biết thêm nhu cầu thực tế để không ngừng phát triển và sáng tạo, chúng tôi cảm thấy tự hào về triết lý kinh doanh này. Hy vọng sẽ sáng tạo ra một giá trị giải trí mới đồng thời đáp ứng được mục đích phổ cập cho mọi nơi và trở thành một trong những trang web hàng đầu trong lĩnh vực giải trí này.</p>
+                    <p>Dịch vụ tiền ảo ngân hàng: công ty chúng tôi cung cấp dịch vụ thanh toán dòng tiền qua mạng, khi quý khách đặt mua điểm số thì sẽ được hưởng các dịch vụ phù hợp mà công ty chúng tôi đã cung cấp.</p>
+                    <h2>Nghĩa vụ đăng ký thông tin xác thực:</h2>
+                    <p>Đối với các hạng mục dịch vụ mà công ty chúng tôi đã cung cấp, sau khi quý khách đồng ý đăng ký thì vui lòng dựa trên trình tự các mục hướng dẫn để cung cấp thông tin cá nhân một cách chính xác và chân thực nhất; Khi thông tin cá nhân của quý khách không chính xác thì vui lòng cập nhật lại để duy trì thông tin cá nhân chính xác và đầy đủ nhất. Nếu thông tin được đăng ký không chính xác hoặc mạo nhận thông tin của người khác mà gây tổn hại đến quyền lợi của người đó hoặc vi phạm pháp luật thì quý khách phải hoàn toàn chịu trách nhiệm trước pháp luật về hành vi đó; Khi quý khách đã cung cấp thông tin cá nhân không chính xác hoặc thông tin cá nhân có sự bất thường mà không chịu cập nhật lại dẫn đến việc không khớp thông tin cá nhân đăng ký lúc ban đầu thì công ty chúng tôi có quyền chấm dứt tư cách và quyền lợi hội viên của quý khách.</p>
+                    <h2>Thay đổi và ngưng cung cấp dịch vụ:</h2>
+                    <p>Dữ liệu đăng nhập của hội viên không chính xác</p>
+                    <p>Sử dụng thông tin của người khác để đăng ký dịch vụ này</p>
+                    <p>Vi phạm quy định về tính công bằng trò chơi</p>
+                    <p>Tham gia các loại trò chơi hoặc các trận đấu mà cố tình lợi dụng các lỗ hỏng của hệ thống hoặc lợi dụng các nhược điểm của trò chơi để gây ảnh hưởng đến kết quả</p>
+                    <p>Công ty chúng tôi không cho phép đặt cược không công bằng, đặt cược hai bên, không rủi ro. Nếu có phát hiện người chơi có vấn đề này, công ty chúng tôi sẽ ngưng quyền sử dụng của người chơi. Nếu có bất kỳ tranh luận vấn đề nào, chúng tôi có quyền quyết định cuối cùng. Ở bất kỳ tình huống nào, sẽ ngưng phục vụ hoặc là chấm dứt phục vụ đối với tài khoản hội viên để tránh gây nên vấn đề phát sinh thiệt hại, chúng tôi không chịu trách nhiệm.</p>
+                    <p>Hội viên nhiều nhất đăng ký 1 tài khoản đặt cược, nếu vượt quá 1 tài khoản đặt cược cùng 1 trận đấu, công ty có quyền hạn xét duyệt xóa đơn cược và bảo lưu đơn cược cuối cùng.</p>
+                    <h2>Tạm ngưng hoặc gián đoạn dịch vụ:</h2>
+                    <ul>
+                        <li>
+                            <p>Một trong các trường hợp sau đây, trang mạng sẽ không chịu bất cứ trách nhiệm bồi thường nào đối với người chơi:</p>
+                            <ol>
+                                <li>Trong trường hợp đang tiến hành di chuyển, thay thế hoặc bảo trì các thiết bị hệ thống có liên quan đến dịch vụ của chúng tôi.</li>
+                                <li>Bị mất mạng internet nhưng không do công ty chúng tôi gây ra mà dẫn đến tạm ngưng hoặc gián đoạn dịch vụ.</li>
+                                <li>Do các yếu tố đặc biệt bất khả kháng dẫn đến tạm ngưng hoặc gián đoạn dịch vụ.</li>
+                            </ol>
+                            <li>
+                                <p>Nếu công ty chúng tôi đối với hệ thống liên quan tiến hành di chuyển, thay đổi hoặc bảo trì, và cần tạm ngưng hoặc gián đoán phục vụ, chúng tôi sẽ gửi thông báo.</p>
+                            </li>
+                            <li>
+                                <p>Trường hợp tạm ngưng và gián đoạn dịch vụ có thể sẽ gây ra những bất tiện và tổn thất như mất dữ liệu, ảnh hướng đến kinh tế, thời gian của quý khách. Vì vậy thường ngày quý khách nên chọn những phương án và cách xử lý thích hợp nhằm đảm bảo được quyền lợi của chính mình.</p>
+                            </li>
+                        </li>
+                    </ul>
+                    <h2>Nghĩa vụ bảo mật:</h2>
+                    <p>Quý hội viên phải tự bảo mật thông tin tài khoản và mật khẩu, đồng thời chịu trách nhiệm về tất cả các thao tác sau khi tài khoản và mật khẩu được đăng nhập. Để đảm bảo quyền lợi của bản thân hội viên, xin đừng tiết lộ hoặc cung cấp tài khoản và mật khẩu cho người khác biết và không nên cho mượn hoặc chuyển nhượng cho người khác sử dụng dưới mọi hình thức.</p>
+                    <h2>Đồng ý với các quy tắc của trò chơi và môn bóng thi đấu:</h2>
+                    <p>Nhằm tránh tình trạng tranh cãi khi đặt cược vào các loại trò chơi cũng như các môn bóng thi đấu, kính mong quý hội viên nên tham khảo chi tiết các quy tắc có liên quan, một khi quý hội viên đã bắt đầu sử dụng dịch vụ này thì được xem như là đã đồng ý với tất cả các quy định của chúng tôi.</p>
+                    <h2>Sửa đổi bổ sung các quy phạm của hội viên:</h2>
+                    <p>Nếu điều khoản dịch vụ có sửa đổi hoặc bổ sung thì quý khách sẽ chịu sự ràng buộc đồng ý với những điều khoản được sửa đổi từ khi có được thông báo từ trang mạng, chúng tôi sẽ không gửi thông báo riêng cho từng cá nhân. Nếu sau khi nhận được thông báo mà quý khách vẫn tiếp tục sử dụng dịch vụ thì xem như đã đồng ý với những điều khoản được sửa đổi đó.</p>
+                    <h2>Quyền riêng tư:</h2>
+                    <p>Chúng tôi cam kết bảo vệ sự riêng tư của khách hàng để cung cấp các trò chơi mang tính an toàn, những thông tin được thu thập được từ trang mạng này sẽ giúp chúng tôi phục vụ quý khách với những dịch vụ tốt nhất. Chúng tôi sẽ không bán hoặc cho thuê thông tin của khách hàng cho bên thứ ba, những thông tin cá nhân mà khách hàng cung cấp sẽ được xử lý mã hóa bảo mật bằng kỹ thuật SSL128 và thông tin sẽ được lưu trữ rất an toàn, không rò rỉ khi thao tác hệ thống. Trong trường hợp có cơ hội tiếp xúc với thông tin cá nhân khách hàng mà được sự trợ giúp từ phí đối tác thì vẫn phải tuân theo các điều khoản về riêng tư mà chúng tôi đưa ra.</p>
+                    <h2>Nội dung từ chối:</h2>
+                    <p>Một số khu vực quốc gia có những quy định không rõ ràng về tính hợp pháp của cờ bạc trực tuyến, thậm chí có quốc gia có quy định hướng dẫn cụ thể loại hình cờ bạc này là bất hợp pháp. Chúng tôi không cố ý mời gọi bất kỳ cá nhân nào tham gia sử dụng dịch vụ của chúng tôi trên khu vực và quốc gia có quy định loại hình này là không hợp pháp. Cá nhân sử dụng dịch vụ này phải xác định rõ rằng khu vực hoặc quốc gia đang sử dụng dịch vụ là có phi pháp hay không và tự chịu hoàn toàn trách nhiệm. Cá nhân sử dụng dịch vụ này nên tuân thủ theo các pháp lệnh có liên quan tại địa phương, nếu có điều gì vi phạm thì chúng tôi sẽ không chịu trách nhiệm.</p>
+                </div>
+            </div>
+            <button class="back"> Đồng ý </button>
+        </div>
+        <!--最新公告-->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>Thông báo mới nhất</p>
+                <i class="close back"></i>
+            </div>
+            <ul class="typeList">
+                <li>
+                    <p class="active">Tin phổ biến</p>
+                </li>
+                <li>
+                    <p>HOT</p>
+                </li>
+                <li>
+                    <p>Thông tin Nạp tiền</p>
+                </li>
+            </ul>
+            <ul class="content normal display">
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+            </ul>
+            <ul class="content hot">
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm tra</div>
+                </li>
+            </ul>
+            <ul class="content deposit">
+                <li>
+                    <div class="date">2022-01-13</div>
+                    <div class="text">kiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm trakiểm tra kiểm tra</div>
+                </li>
+            </ul>
+        </div>
+        <!--體育彈窗-->
+        <div class="jumpWindow gameWindow sport">
+            <div class="title">
+                <p>體育</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">PX</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--真人彈窗-->
+        <div class="jumpWindow gameWindow live">
+            <div class="title">
+                <p>真人</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">歐博</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--彩票彈窗-->
+        <div class="jumpWindow gameWindow lottery">
+            <div class="title">
+                <p>彩票</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">SG</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--老虎機彈窗-->
+        <div class="jumpWindow gameWindow slot">
+            <div class="title">
+                <p>slot</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle">VÍ chinh</p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">png</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">Vào Game</button>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

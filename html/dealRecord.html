@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="bg"></div>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./deposit.html'"></i>
+            <div class="title">Lịch sử giao dịch</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--交易紀錄-->
+        <div class="bettingWrap deal">
+            <div class="recordTop">
+                <ul>
+                    <li class="active">Lịch sử điểm</li>
+                    <li onclick="window.location.href='./dealRecord_water.html'">Lịch sử rút tiền</li>
+                </ul>
+            </div>
+            <div class="searchContent">
+                <div class="top">
+                    <div class="full">
+                        <p>Loại hình</p>
+                        <div class="selectBox">
+                            <select>
+                                <option value="">Nạp tiền</option>
+                                <option value="">Rút tiền</option>
+                                <option value="">Chuyển điểm</option>
+                                <option value="">Khuyến mại</option>
+                                <option value="">Điểm hoàn trả/ Lãi suất</option>
+                                <option value=""> Khác </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="full">
+                        <p>選擇ngày</p>
+                        <div class="inputBox">
+                            <input type="date">
+                            ~
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="date">
+                    <button>Hôm qua</button>
+                    <button class="active"> Hôm nay </button>
+                    <button>Tuần này</button>
+                    <button>Tháng này</button>
+                </div>
+                <button class="check">Tra cứu</button>
+            </div>
+            <div class="list">
+                <p class="noData display">Không có dữ liệu</p>
+                <div class="recordBox">
+                    <p class="title">
+                          - chuyển ra ngoài
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Nội dung giao dịch
+                            <p>BNGgiải trí-></p>
+                        </li>
+                        <li> 
+                            số lượng
+                            <span>9999</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                          - chuyển ra ngoài
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Nội dung giao dịch
+                            <p>BNGgiải trí-></p>
+                        </li>
+                        <li>                            
+                            số lượng
+                            <span>9999</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                          - chuyển ra ngoài
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Nội dung giao dịch
+                            <p>BNGgiải trí-></p>
+                        </li>
+                        <li>                           
+                            số lượng
+                            <span>9999</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                          - chuyển ra ngoài
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Nội dung giao dịch
+                            <p>BNGgiải trí-></p>
+                        </li>
+                        <li>
+                            金額
+                            <span>9999</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--帳戶平台彈窗-->
+        <div class="jumpWindow accWindow">
+            <div class="title">
+                帳戶
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bigBox">
+                    <button class="active">全帳戶</button>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow platWindow">
+            <div class="title">
+                平台
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bigBox">
+                    <button class="active">全平台</button>
+                </div>
+                <div class="smallBox">
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

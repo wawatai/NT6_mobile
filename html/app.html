@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">Tải APP</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">ALL BAT</div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">SA CASINO</div>
+        </div>
+        <div class="content helpPage q3">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">WM CASINO</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--Tải APP舊-->
+        <!-- <div class="appWrap">
+            <ul>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+            </ul>
+        </div> -->
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>Tải APP</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <!-- <option value="" disabled>請選擇</option> -->
+                        <option value="./help_new.html">Hướng dẫn người chơi</option>
+                        <!-- <option value="./help_often.html" selected>常見問題</option> -->
+                        <option value="./help_about.html">Thông tin trang</option>
+                        <option value="./app.html">Tải APP</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>ALL BAT</li>
+                    <li>SA CASINO</li>
+                    <li>WM CASINO</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">Đăng nhập vào ứng dụng</p>
+                        <p> Vui lòng vào [Trung tâm thành viên> Thông tin cá nhân> Mật khẩu tài khoản nền tảng] để xem mật khẩu tài khoản </p>
+                        <button class="downloadBtn">Download</button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q2">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">Đăng nhập vào ứng dụng</p>
+                        <p> Vui lòng vào [Trung tâm thành viên> Thông tin cá nhân> Mật khẩu tài khoản nền tảng] để xem mật khẩu tài khoản </p>
+                        <p class="platform">
+                            Android
+                            <button class="downloadBtn">Download</button>
+                        </p>
+                        <p class="platform">
+                            IOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="downloadBtn">Download</button>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q3">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">Đăng nhập vào ứng dụng</p>
+                        <p> Vui lòng vào [Trung tâm thành viên> Thông tin cá nhân> Mật khẩu tài khoản nền tảng] để xem mật khẩu tài khoản </p>
+                        <button class="downloadBtn">Download</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,395 @@
+//幫助中心外層
+.helpWrap {
+    display: none;
+    width: 100%;
+    height: auto;
+    // background: $mainBG_2;
+
+    &.display {
+        display: block;
+    }
+
+    //開頭選單
+    .helpHeader {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid 2px $mainBorder_1;
+        background: $mainBG_1;
+
+        .selectBox {
+            width: 92.27vw;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $mainBG_2;
+            // box-shadow: 0 0 13px 2px $boxshadow_1;
+            position: relative;
+            border-radius: 3px;
+            border: solid 1px $mainBorder_2;
+
+            p {
+                color: $title_2;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .arrow_ic {
+                display: block;
+                width: 2vw;
+                height: 3.4vw;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%) rotate(90deg);
+                right: 4vw;
+                transition: 0.3s all;
+            }
+
+            select {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                padding-left: 15px;
+                color: $mainWord_1;
+                background: $mainBG_3;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    }
+
+    //內容
+    .helpBody {
+        width: 100%;
+        height: calc(100vh - 164px);
+        overflow-y: auto;
+        background: $mainBG_1;
+
+        ul {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 15px 4vw;
+
+            li {
+                width: 100%;
+                height: 52px;
+                @include normalBtn2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // box-shadow: 0 0 5px 0 $boxshadow_2;
+                margin-bottom: 15px;
+                font-size: 14px;
+                font-weight: bold;
+                color: $title_2;
+                border: solid 1px $mainBorder_2;
+            }
+        }
+    }
+}
+
+//幫助中心內層
+.helpInner {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 94px);
+    overflow-y: auto;
+    background: $mainBG_1;
+
+    &.display {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        width: 100%;
+        height: auto;
+
+        &.display {
+            display: block;
+        }
+
+        li {
+            width: 100%;
+            height: auto;
+            // margin: 14px 0;
+
+            &.active {
+
+                .title {
+
+                    .arrow_ic {
+                        transform: rotate(270deg);
+                    }
+                }
+
+                .textBox {
+                    display: block;
+                }
+            }
+
+            .title {
+                width: 92.27vw;
+                height: 52px;
+                background: $mainBG_1;
+                // box-shadow: 0 0 5px 0 $boxshadow_2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2vw auto 0;
+                border: solid 1px $mainBorder_2;
+
+                .icon {
+                    display: block;
+                    width: 22px;
+                    height: 25px;
+                    margin: 0 4vw;
+                    flex-shrink: 0;
+                }
+
+                .arrow_ic {
+                    display: block;
+                    width: 2vw;
+                    height: 3.4vw;
+                    margin: 0 4vw;
+                    flex-shrink: 0;
+                    // transform: rotate(180deg);
+                    transition: 0.3s all;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $title_2;
+                }
+            }
+
+            .inportent_box {
+
+                background: $liner-bg;
+                border-bottom: 1px solid $mainBorder_1;
+                padding: 5vw 5vw;
+
+                p {
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $help_Word;
+                    margin-bottom: 8px;
+
+                    &.smallTitle {
+                        font-size: 5vw;
+                        margin: 20px 0 10px;
+                        color: $help_Title;
+                        text-align: center;
+
+                        &.first {
+                            margin-top: 0;
+                            text-align: left;
+                            color: $title_3;
+                        }
+                    }
+
+                    &.platform {
+                        font-size: 18px;
+                        color: $help_Title;
+                        margin: 15px 0;
+                        text-align: center;
+
+                        .downloadBtn {
+                            width: 144px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    a {
+                        color: $remind_Sp;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .textBox {
+                display: none;
+                width: 92.27vw;
+                height: auto;
+                box-sizing: border-box;
+                padding: 10px;
+                margin: 0 auto;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                // background:$maingoldBG;
+                // border: 1px solid $mainBorder_1;
+                // border-top: none;
+
+                &.textBoder {
+                    border: 1px solid $mainBorder_2;
+                    background: $scendmain;
+                    border-top: none;
+                }
+
+                &.app {
+                    background: none;
+                    border: none;
+                }
+
+                p {
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $help_Word;
+                    margin-bottom: 8px;
+
+                    &.smallTitle {
+                        font-size: 5vw;
+                        margin: 20px 0 10px;
+                        color: $help_Title;
+                        text-align: center;
+
+                        &.first {
+                            margin-top: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    &.platform {
+                        font-size: 18px;
+                        color: $help_Title;
+                        margin: 15px 0;
+                        text-align: center;
+
+                        .downloadBtn {
+                            width: 144px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    a {
+                        color: $remind_Sp;
+                        text-decoration: none;
+                    }
+                }
+
+                h1 {
+                    // text-align: center;
+                    font-weight: bold;
+                    margin-bottom: 2vw;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    margin-bottom: 2vw;
+                    color: $title_2;
+                }
+
+                .img {
+                    width: 100%;
+                    height: 0;
+                    padding-top: 87%;
+                    margin: 10px 0;
+
+                    &.transferWay {
+                        padding-top: 111%;
+                    }
+
+                    &.remote {
+                        padding-top: 137%;
+                    }
+
+                    &.license {
+                        padding-top: 134%;
+                    }
+                }
+
+                .btnBox1 {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    div {
+                        width: 100%;
+                        height: 42vw;
+                        position: relative;
+                        margin-bottom: 15px;
+                        @include help_lineBtn1;
+
+                        i {
+                            display: block;
+                            position: absolute;
+                            width: 8.7vw;
+                            height: 8.7vw;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5.5vw;
+                            
+                        }
+
+                        p {
+                            font-size: 2vw;
+                            font-weight: bold;
+                            margin: 0;
+
+                            &:nth-of-type(1) {
+                                font-size: 5vw;
+                            }
+                        }
+
+                        h1 {
+                            font-size: 3.4vw;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .btnBox {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+
+                    div {
+                        width: 100%;
+                        height: 97px;
+                        position: relative;
+                        margin-bottom: 15px;
+                        @include help_lineBtn;
+
+                        i {
+                            display: block;
+                            position: absolute;
+                            width: 8.7vw;
+                            height: 8.7vw;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5.5vw;
+                            
+                        }
+
+                        p {
+                            font-size: 3.4vw;
+                            font-weight: bold;
+                            margin: 0;
+
+                            &:nth-of-type(1) {
+                                font-size: 5vw;
+                            }
+                        }
+                    }
+                }
+
+                .downloadBtn {
+                    width: 100%;
+                    height: 42px;
+                    @include mainBtn;
+                }
+            }
+        }
+    }
+}

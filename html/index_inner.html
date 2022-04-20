@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="bg"></div>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <!--logo-->
+            <img src="../images/icon/logo.png" class="logo">
+            <!-- <div class="invite" onclick="window.location.href='./invitevip_page.html'">
+                <div class="inviteimg"></div>
+            </div> -->
+            <div class="online_member">
+                <p>10816</p>
+            </div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--圖片輪播-->
+        <div class="ad">
+            <section class="single-item">
+                <img src="../images/banner.png">
+                <img src="../images/banner.png">
+                <img src="../images/banner.png">
+                <img src="../images/banner.png">
+            </section>
+        </div>
+        <!--跑馬燈-->
+        <div class="marqueeBox">
+            <i class="marquee_ic"></i>
+            <div class="marquee">
+                <pre>test test test test</pre>
+            </div>
+        </div>
+        <!--登入區-->
+        <div class="memberArea">
+            <!--大登入按鈕登入後樣式-->
+            <div class="alLogin display">
+                <ul>
+                    <li>
+                        <i></i>
+                        <div class="lv">Thành viên mới</div>
+                    </li>
+                    <span class="name">user898</span>
+                    <li class="amount">$9883</li>
+                </ul>
+            </div>
+            <!--轉存提+vip-->
+            <div class="operate login">
+                <div class="btnBox">
+                    <button onclick="window.location.href='./deposit.html'">
+                        <i></i>
+                        <span>Nạp tiền</span>
+                    </button>
+                    <button onclick="window.location.href='./transfer.html'">
+                        <i></i>
+                        <span>Chuyển điểm</span>
+                    </button>
+                    <button onclick="window.location.href='./withdrawal.html'">
+                        <i></i>
+                        <span>Rút tiền</span>
+                    </button>
+                    <!-- <button class="vipBtn" onclick="window.location.href='./vip.html'">
+                        <span class="vipWord">VIP</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        <!--遊戲區-->
+        <div class="homeCenter">
+            <!--遊戲種類選單-->
+            <ul class="gameList">
+                <ol class="gameListBG">
+                    <li class="sportBtn">
+                    <li class="slotBtn active">
+                        <div>
+                            <i class="sport_ic"></i>
+                            <p>SLOTS</p>
+                        </div>
+                    </li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">
+                        <div>
+                            <i class="fish_ic"></i>
+                            <p>BẮN CÁ</p>
+                        </div>
+                    </li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">
+                        <div>
+                            <i class="board_ic"></i>
+                            <p>GAME BÀI</p>
+                        </div>
+                    </li>
+                    <li class="sportBtn">
+                        <div>
+                            <i class="slot_ic"></i>
+                            <p>THỂ THAO</p>
+                        </div>
+                    </li>
+                    <li class="liveBtn">
+                        <div>
+                            <i class="live_ic"></i>
+                            <p>CASINO</p>
+                        </div>
+                    </li>
+                    <li class="lotteryBtn">
+                        <div>
+                            <i class="lottery_ic"></i>
+                            <p>XỔ SỐ</p>
+                        </div>
+                    </li>
+                </ol>
+            </ul>
+            <!--遊戲選擇-->
+            <ul class="gameBox slotBox display">
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/bng.png">
+                    <p>BNG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/tpg.png">
+                    <p>TPG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/px.png">
+                    <p>PX</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/simplePlay.png">
+                    <p>SimplePlay</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/rsg.png">
+                    <p>RSG</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/ifun.png">
+                    <p>IFUN</p>
+                </li>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/bwin.png">
+                    <p>BWIN</p>
+                </li>
+                <!-- <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/png.png">
+                    <p>PNG</p>
+                </li> -->
+            </ul>
+            <ul class="gameBox liveBox">
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/sa.png">
+                    <p>SA CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/allbet.png">
+                    <p>ALL BAT</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/dg.png">
+                    <p>DG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/wm.png">
+                    <p>WM</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
+                    <p>OG CASINO</p>
+                </li>
+            </ul>
+            <ul class="gameBox sportBox">
+                <li class="sportsize" onclick="callSport()">
+                    <img src="../images/廠商圖/sport/36588.png">
+                    <p>36588 SPORTS</p>
+                </li>
+            </ul>
+            <ul class="gameBox lotteryBox">
+                <li class="lotterysize" onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/rwd.png">
+                    <p>RWD</p>
+                </li>
+                <!-- <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/SG.png">
+                    <p>SG88六合、大樂、539</p>
+                </li>
+                <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/GS.png">
+                    <p>京彩彩票</p>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li class="active" onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--體育彈窗-->
+        <div class="jumpWindow gameWindow sport">
+            <div class="title">
+                <p>體育</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">PX</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--真人彈窗-->
+        <div class="jumpWindow gameWindow live">
+            <div class="title">
+                <p>真人</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">歐博</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--彩票彈窗-->
+        <div class="jumpWindow gameWindow lottery">
+            <div class="title">
+                <p>彩票</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle"> Ví chính </p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">SG</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">vào trò chơi</button>
+        </div>
+        <!--老虎機彈窗-->
+        <div class="jumpWindow gameWindow slot">
+            <div class="title">
+                <p>slot</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle">VÍ chinh</p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">Tất cả</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>Xác nhận</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">PNG</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">Vào Game</button>
+        </div>
+    </div>
+</body>
+</html>

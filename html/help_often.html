@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">Hướng dẫn người chơi</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Hướng dẫn người chơi</div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Nạp tiền</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>Hướng dẫn người chơi</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <!-- <option value="" disabled>請選擇</option> -->
+                        <option value="./help_new.html">Hướng dẫn người chơi</option>
+                        <!-- <option value="./help_often.html" selected>常見問題</option> -->
+                        <option value="./help_about.html">Thông tin trang</option>
+                        <option value="./app.html">Tải APP</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>Đăng ký</li>
+                    <li>Nạp tiền</li>
+                    <li onclick="window.location.href='./help_often_contact.html'">Rút tiền</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <!-- <p>如何註冊帳號</p> -->
+                        <p>Làm cách nào để trở thành hội viên của trangVN99?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox textBoder">
+                        <!-- <h2>Làm cách nào để trở thành hội viên của trangVN99?</h2> -->
+                        <p>Để trở thành hội viên của trang [VN99] , bạn vui lòng chọn mục Trang chủ , sau đó chọn ô 
+                            <a href="#/register">Đăng ký</a>
+                            để tiến hành đăng ký. Tên tài khoản đăng ký phải có ít nhất 6 ~ 10 ký tự ( bao gồm chữ và số ) , sau khi điền đầy đủ thông tin yêu
+                            cầu gồm Họ tên thật, Số điện thoại, Line , mã giới thiệu ( nếu có ) bạn vui lòng tích vào ô Đồng ý với các điều khoản và chính
+                            sách bảo mật của trang, sau đó tiến hành bấm vào ô Xác nhận để tạo tài khoản thành công.
+                        </p>
+                    </div>
+                </li>
+                <!-- <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>我該如何存款?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>資金存入您的通博(tb588)成員帳戶可使用以下方法：</p>
+                        <p>1. 銀行轉帳存款(網路銀行ATM轉帳或實體自動櫃員機ATM轉帳)。</p>
+                        <p>2. 虛擬ATM存款(實體自動櫃員機ATM轉帳)。</p>
+                        <p>3. 超商支付。</p>
+                        <p>作為我們尊貴的客戶，我們會一直努力讓銀行免收取何任費用，讓你不會被我們收取任何在存款時或從您的帳戶中提款時的費用。</p>
+                        <p>除非我們特地提前提醒您，您所要求的特定方法進行過量的存提款。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>我的個人資料安全嗎?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>在這裡我們可確保您的個人資料是安全無虞的，通博(tb588)娛樂城堅持使用最高等級安全措施及最安全的通訊協定（SSL 128位加密標準），並存儲在最安全的作業環境，並且通博(tb588)娛樂城永遠不會向任何第三方人員透露您的各項個人資料，敬請放心。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>太久沒登入忘記密碼了怎麼辦?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>若您忘記您密碼，請點選畫面右上方 [ 忘記密碼? ]，填寫您註冊時所使用的行動電話，系統將會寄一組臨時密碼到您的的手機，使用臨時密碼登入後再至會員中心進行密碼修改。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>通博(tb588)娛樂城支援幾種貨幣呢?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>目前本娛樂城僅支援新台幣，往後將視情況開放人民幣投注。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>通博(tb588)娛樂城最低投注額是多少?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>最低投注額各個項目有所不同，當您打開每一項遊戲時，遊戲畫面會顯示該項遊戲最低投注額。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>加投注後進行派彩需要多久?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>我們為追求賽果正確性，將以官方結果為依據以最快速度進行結算並派彩，唯獨某些賽事可能發生某些突發狀況導致官方無法公佈正確賽果，而該場賽事將可能會延遲結算程序，以至於延誤派彩。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>申請點數出售交易需要多久完成?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>通博(tb588)娛樂城提供24小時，全年無休點數出售交易，並將於您提出交易需求後30分鐘內快速完成。</p>
+                    </div>
+                </li> -->
+            </ul>
+            <ul class="q2">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>Nạp tiền</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox textBoder">
+                        <p>1. Để nạp tiền vào tài khoản, vui lòng chọn mục Nạp tiền và chọn hình thức thanh toán bạn muốn để tiến hành Nạp tiền. </p>
+                        <!-- <p>下載後並執行</p> -->
+                        <p>2. Trang hỗ trợ việc Nạp tiền qua thẻ ngân hàng bằng ứng dụng điện thoại, thanh toán trực tiếp tại cây ATM và thanh toán tại tại
+                            cửa hàng tiện lợi, hội viên có thể lựa chọn phương thức nạp tiền thuận tiện nhất để Nạp tiền cho tài khoản của mình. </p>
+                        <p>3. Sau khi chuyển tiền thành công hệ thống sẽ tiến hành xác minh khoản nạp và lên điểm cho hội viên.</p>
+                        <!-- <div class="img remote"></div> -->
+                        <!-- <p class="smallTitle">遠端協助</p>
+                        <p>1.下載無需任何費用</p>
+                        <p>2.遠端協助程式使用完畢後即可關閉與卸載，無須擔心安全性問題。</p>
+                        <p>3.可由客服或電腦工程人員爲您遠端操作電腦，妥善協助您查看並解決當前電腦或軟體問題。</p> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

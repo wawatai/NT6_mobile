@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">Thông tin trang</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Điều khoản phục vụ </div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Riêng tư</div>
+        </div>
+        <div class="content helpPage q3">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Cá cược có trách nhiệm </div>
+        </div>
+        <div class="content helpPage q4">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">Tính bảo mật</div>
+        </div>
+        <div class="content helpPage q5">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">免責聲明</div>
+        </div>
+        <div class="content helpPage q6">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">證照展示</div>
+        </div>
+        <div class="content helpPage q7">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">存取款幫助</div>
+        </div>
+        <div class="content helpPage q8">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">相關規則</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>Thông tin trang</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <!-- <option value="" disabled>請選擇</option> -->
+                        <option value="./help_new.html">Hướng dẫn người chơi</option>
+                        <!-- <option value="./help_often.html" selected>常見問題</option> -->
+                        <option value="./help_about.html">Thông tin trang</option>
+                        <option value="./app.html">Tải APP</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>Điều khoản phục vụ</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Cá cược có trách nhiệm</li>
+                    <li>Tính bảo mật </li>
+                    <!-- <li>免責聲明</li>
+                    <li>證照展示</li>
+                    <li>存取款幫助</li>
+                    <li>相關規則</li> -->
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li class="active">
+                    <!-- <div class="title">
+                        <i class="icon about"></i>
+                        <p>Điều khoản phục vụ </p>
+                        <i class="arrow_ic"></i>
+                    </div> -->
+                    <div class="textBox">
+                        <p class="smallTitle first">Tuân thủ các quy định hội viên và các quy định pháp lệnh:</p>
+                        <p>Sau khi quý khách đăng ký tài khoản hội viên thành công thì sẽ được sử dụng tất cả các dịch vụ của công ty chúng tôi. Khi sử dụng các dịch vụ đó, đồng nghĩa quý khách đã đồng ý và tuân thủ theo các quy định mà công ty chúng tôi đề ra như (Quy tắc trò chơi Casino, quy tắc đặt cược thể thao, thông báo, các hạng mục chú ý) và một số pháp lệnh có liên quan. Tất cả các dịch vụ liên quan như sản phẩm, dịch vụ khách hàng, hệ thống phần mềm, kèo cược, trò chơi, casino, kết cấu mạng của công ty chúng tôi đều được giám sát bởi ủy ban cờ bạc và giải trí của nước Philippines. Vì vậy khi quý khách sử dụng những dịch vụ của chúng tôi thì phải tuân thủ theo các pháp lệnh hợp pháp của nước bản địa, nếu có vi phạm điều gì đều không thuộc phạm vi trách nhiệm dịch vụ của chúng tôi.</p>
+                        <p class="smallTitle">Giới thiệu dịch vụ:</p>
+                        <p>Công ty chúng tôi dựa trên nền tảng dịch vụ chất lượng [An Toàn Uy Tín], [Tiện Lợi Kịp Thời], [Công Bằng Công Chính]. Điều tuyệt vời là hội viên không chịu sự gò bó về thời gian mà có thể lên mạng mọi lúc và tham gia một loại trò chơi bất kỳ với tính công bằng tuyệt đối, ngoài ra hội viên có thể cảm nhận học hỏi những điều thú vị cùng với những người chơi khác trên thế giới. Chúng tôi luôn duy trì một thái độ tôn trọng khách hàng, từ đó tìm tòi hiểu biết thêm nhu cầu thực tế để không ngừng phát triển và sáng tạo, chúng tôi cảm thấy tự hào về triết lý kinh doanh này. Hy vọng sẽ sáng tạo ra một giá trị giải trí mới đồng thời đáp ứng được mục đích phổ cập cho mọi nơi và trở thành một trong những trang web hàng đầu trong lĩnh vực giải trí này.</p>
+                        <p class="smallTitle">Nghĩa vụ đăng ký thông tin xác thực:</p>
+                        <p>Đối với các hạng mục dịch vụ mà công ty chúng tôi đã cung cấp, sau khi quý khách đồng ý đăng ký thì vui lòng dựa trên trình tự các mục hướng dẫn để cung cấp thông tin cá nhân một cách chính xác và chân thực nhất; Khi thông tin cá nhân của quý khách không chính xác thì vui lòng cập nhật lại để duy trì thông tin cá nhân chính xác và đầy đủ nhất. Nếu thông tin được đăng ký không chính xác hoặc mạo nhận thông tin của người khác mà gây tổn hại đến quyền lợi của người đó hoặc vi phạm pháp luật thì quý khách phải hoàn toàn chịu trách nhiệm trước pháp luật về hành vi đó; Khi quý khách đã cung cấp thông tin cá nhân không chính xác hoặc thông tin cá nhân có sự bất thường mà không chịu cập nhật lại dẫn đến việc không khớp thông tin cá nhân đăng ký lúc ban đầu thì công ty chúng tôi có quyền chấm dứt tư cách và quyền lợi hội viên của quý khách.</p>
+                        <p class="smallTitle">Thay đổi và ngưng cung cấp dịch vụ:</p>
+                        <p>1.Dữ liệu đăng nhập của hội viên không chính xác</p>
+                        <p>2.Sử dụng thông tin của người khác để đăng ký dịch vụ này</p>
+                        <p>3.Vi phạm quy định về tính công bằng trò chơi</p>
+                        <p>4.Tham gia các loại trò chơi hoặc các trận đấu mà cố tình lợi dụng các lỗ hỏng của hệ thống hoặc lợi dụng các nhược điểm của trò chơi để gây ảnh hưởng đến kết quả</p>
+                        <p>5.Công ty chúng tôi không cho phép đặt cược không công bằng, đặt cược hai bên, không rủi ro. Nếu có phát hiện người chơi có vấn đề này, công ty chúng tôi sẽ ngưng quyền sử dụng của người chơi. Nếu có bất kỳ tranh luận vấn đề nào, chúng tôi có quyền quyết định cuối cùng. Ở bất kỳ tình huống nào, sẽ ngưng phục vụ hoặc là chấm dứt phục vụ đối với tài khoản hội viên để tránh gây nên vấn đề phát sinh thiệt hại, chúng tôi không chịu trách nhiệm.</p>
+                        <p>6.Hội viên nhiều nhất đăng ký 1 tài khoản đặt cược, nếu vượt quá 1 tài khoản đặt cược cùng 1 trận đấu, công ty có quyền hạn xét duyệt xóa đơn cược và bảo lưu đơn cược cuối cùng.</p>
+                        <p class="smallTitle">Tạm ngưng hoặc gián đoạn dịch vụ:</p>
+                        <p>Một trong các trường hợp sau đây, trang mạng sẽ không chịu bất cứ trách nhiệm bồi thường nào đối với người chơi:</p>
+                        <p>Nếu công ty chúng tôi đối với hệ thống liên quan tiến hành di chuyển, thay đổi hoặc bảo trì, và cần tạm ngưng hoặc gián đoán phục vụ, chúng tôi sẽ gửi thông báo.</p>
+                        <p>Trường hợp tạm ngưng và gián đoạn dịch vụ có thể sẽ gây ra những bất tiện và tổn thất như mất dữ liệu, ảnh hướng đến kinh tế, thời gian của quý khách. Vì vậy thường ngày quý khách nên chọn những phương án và cách xử lý thích hợp nhằm đảm bảo được quyền lợi của chính mình.</p>
+                        <p class="smallTitle">Nghĩa vụ bảo mật:</p>
+                        <p>Quý hội viên phải tự bảo mật thông tin tài khoản và mật khẩu, đồng thời chịu trách nhiệm về tất cả các thao tác sau khi tài khoản và mật khẩu được đăng nhập. Để đảm bảo quyền lợi của bản thân hội viên, xin đừng tiết lộ hoặc cung cấp tài khoản và mật khẩu cho người khác biết và không nên cho mượn hoặc chuyển nhượng cho người khác sử dụng dưới mọi hình thức.</p>
+                        <p class="smallTitle">Đồng ý với các quy tắc của trò chơi và môn bóng thi đấu:</p>
+                        <p>Nhằm tránh tình trạng tranh cãi khi đặt cược vào các loại trò chơi cũng như các môn bóng thi đấu, kính mong quý hội viên nên tham khảo chi tiết các quy tắc có liên quan, một khi quý hội viên đã bắt đầu sử dụng dịch vụ này thì được xem như là đã đồng ý với tất cả các quy định của chúng tôi.</p>
+                        <p class="smallTitle">Sửa đổi bổ sung các quy phạm của hội viên:</p>
+                        <p>Nếu điều khoản dịch vụ có sửa đổi hoặc bổ sung thì quý khách sẽ chịu sự ràng buộc đồng ý với những điều khoản được sửa đổi từ khi có được thông báo từ trang mạng, chúng tôi sẽ không gửi thông báo riêng cho từng cá nhân. Nếu sau khi nhận được thông báo mà quý khách vẫn tiếp tục sử dụng dịch vụ thì xem như đã đồng ý với những điều khoản được sửa đổi đó.</p>
+                        <p class="smallTitle">Quyền riêng tư:</p>
+                        <p>Chúng tôi cam kết bảo vệ sự riêng tư của khách hàng để cung cấp các trò chơi mang tính an toàn, những thông tin được thu thập được từ trang mạng này sẽ giúp chúng tôi phục vụ quý khách với những dịch vụ tốt nhất. Chúng tôi sẽ không bán hoặc cho thuê thông tin của khách hàng cho bên thứ ba, những thông tin cá nhân mà khách hàng cung cấp sẽ được xử lý mã hóa bảo mật bằng kỹ thuật SSL128 và thông tin sẽ được lưu trữ rất an toàn, không rò rỉ khi thao tác hệ thống. Trong trường hợp có cơ hội tiếp xúc với thông tin cá nhân khách hàng mà được sự trợ giúp từ phí đối tác thì vẫn phải tuân theo các điều khoản về riêng tư mà chúng tôi đưa ra.</p>
+                        <p class="smallTitle">Nội dung từ chối:</p>
+                        <p>Một số khu vực quốc gia có những quy định không rõ ràng về tính hợp pháp của cờ bạc trực tuyến, thậm chí có quốc gia có quy định hướng dẫn cụ thể loại hình cờ bạc này là bất hợp pháp. Chúng tôi không cố ý mời gọi bất kỳ cá nhân nào tham gia sử dụng dịch vụ của chúng tôi trên khu vực và quốc gia có quy định loại hình này là không hợp pháp. Cá nhân sử dụng dịch vụ này phải xác định rõ rằng khu vực hoặc quốc gia đang sử dụng dịch vụ là có phi pháp hay không và tự chịu hoàn toàn trách nhiệm. Cá nhân sử dụng dịch vụ này nên tuân thủ theo các pháp lệnh có liên quan tại địa phương, nếu có điều gì vi phạm thì chúng tôi sẽ không chịu trách nhiệm.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q2">
+                <li class="active">
+                    <!-- <div class="title">
+                        <i class="icon about"></i>
+                        <p>Riêng tư</p>
+                        <i class="arrow_ic"></i>
+                    </div> -->
+                    <div class="textBox">
+                        <p class="smallTitle first">Riêng tư</p>
+                        <h1>1.Quy tắc bảo mật:</h1>
+                        <p>• Chúng tôi cam kết bảo vệ sự riêng tư của khách hàng để cung cấp các trò chơi mang tính an toàn, những thông tin được thu thập được từ trang mạng này sẽ giúp chúng tôi phục vụ quý khách với những dịch vụ tốt nhất. Chúng tôi sẽ không bán hoặc cho thuê thông tin của khách hàng cho bên thứ ba, những thông tin cá nhân mà khách hàng cung cấp sẽ được xử lý mã hóa bảo mật bằng kỹ thuật SSL128 và thông tin sẽ được lưu trữ rất an toàn, không rò rỉ khi thao tác hệ thống. Trong trường hợp có cơ hội tiếp xúc với thông tin cá nhân khách hàng mà được sự trợ giúp từ phí đối tác thì vẫn phải tuân theo các điều khoản về riêng tư mà chúng tôi đưa ra.</p>
+                        <h1>2.Bảo mật tài khoản và mật khẩu:</h1>
+                        <p>• Quý khách phải tự bảo mật thông tin tài khoản và mật khẩu của mình. Không cho phép bất kỳ người nào hoặc đối tác khách hàng, kể cả vị thành niên sử dụng tài khoản của quý khách để thực hiện hỏi đáp và đặt cược trên trang mạng này. Nếu xảy ra tình trạng như trên thì công ty chúng tôi có quyền từ chối chi trả tiền thưởng và phần thưởng được phát sinh trong trường hợp này. Đồng thời quý khách phải chịu hoàn toàn trách nhiệm trước những tổn thất gây ra cho đối tác của mình.</p>
+                        <h1>3.Email định kỳ:</h1>
+                        <p>• Quý khách có thể sẽ nhận được một số Email được gửi theo định kỳ về việc cập nhật thông tin và dịch vụ của công ty chúng tôi. Khi trang mạng chúng tôi có cung cấp thêm các dịch vụ mới thì email này thực sự là một phần hỗ trợ không hề nhỏ cho việc quý khách tận hưởng dịch vụ của chúng tôi.</p>
+                        <h1>4.Địa chỉ IP:</h1>
+                        <p>• Hệ thống của chúng tôi sẽ tự động lưu trữ địa chỉ IP của quý khách, nhưng chúng tôi tuyệt đối không lưu trữ địa chỉ mail của bạn, điều này chỉ đơn thuần giúp chúng tôi thống kê tổng lưu lượng của trang mạng.</p>
+                        <h1>5.Quyền bảo lưu:</h1>
+                        <p>• Công ty chúng tôi có quyền thay đổi các chính sách riêng tư, chính sách riêng tư này nếu có thay đổi đều có tính ràng buộc và có hiệu lực ngay.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q3">
+                <li class="active">
+                    <!-- <div class="title">
+                        <i class="icon about"></i>
+                        <p>責任博彩</p>
+                        <i class="arrow_ic"></i>
+                    </div> -->
+                    <div class="textBox">
+                        <p class="smallTitle first">Trách nhiệm cá cược</p>
+                        <h1>Quan niệm:</h1>
+                        <p>• Đối với đa số người mà nói thì đánh bạc là một thú vui và an nhàn. Tuy nhiên, đối với một số người khác thì bài bạc là một tiêu cực.
+                            Đối với chúng tôi là chơi nhỏ để tiêu khiển, quan trọng nhất là không vượt quá giới hạn. Chúng tôi hy vọng khách hàng của mình sẽ có được niềm vui khi tiến hành đặt cược, đồng thời cũng hy vọng đừng vì đặt cược mà ảnh hưởng đến tình hình tài chính và đời sống của bản thân khách hàng.</p>
+                        <h1>Tìm hiểu kiểm soát cá cược:</h1>
+                        <p>• Bạn có thể thông qua những loại câu hỏi dưới đây để xác nhận bản thân đã nghiện cá cược hay chưa:</p>
+                        <p>• Bạn tham gia cá cược vì muốn trốn tránh công việc và việc học phải không?</a></p>
+                        <p>Bạn tham gia đánh bạc có phải là để trốn tránh nỗi buồn, cuộc sống không vui vẻ phải không?</p>
+                        <p>Khi đặt cược xong, bạn cảm thấy tiếc nuối vì tiền đã mất đi hay là muốn nhanh chóng đặt cược tiếp?</p>
+                        <p>Bạn sẽ tiếp tục đặt cược cho đến khi thua hết tiền rồi mới thôi phải không?</p>
+                        <p>Bạn có cố tình che giấu về việc bạn dành thời gian và tiền bạc cho cá cược hay không?</p>
+                        <p>Bạn đã từng nhận được sự phê bình của người khác về hành vi cá cược của bản thân phải không?</p>
+                        <p>Bạn có phải đã mất đi cảm giác vui thích đối với gia đình, bạn bè hoặc sở thích của mình hay không?</p>
+                        <p>Sau khi thua, bạn có muốn ngay lập tức thắng lại số tiền đã thua không?</p>
+                        <p>Bạn có phải không muốn sử dụng số tiền đặt cược đó vào mục đích khác hay không?</p>
+                        <p>• Tất cả những câu hỏi ở trên mà bạn trả lời là [có] càng nhiều (Có một tiêu chuẩn nào hay không? Chẳng hạn từ 5 câu hỏi trở lên bạn trả lời là có thì biểu thị bạn mắc chứng mê cờ bạc), chúng tôi góp ý với bạn như sau:</p>
+                        <p>• Hãy xem cờ bạc là một thú vui tiêu khiển</p>
+                        <p>• Tránh tổn thất liên tiếp</p>
+                        <p>• Vui lòng đừng cá cược khi đã nhậu say hoặc tinh thần không tốt</p>
+                        <p>• Sắp xếp thời gian chơi bạc một cách hợp lý</p>
+                        <p><a href="#">www.gamblingtherapy.org.uk</a></p>
+                        <p class="smallTitle">Tự cách ly:</p>
+                        <p>Đối với một số khách hàng muốn tạm thời cách ly cờ bạc một thời gian thì chúng tôi có cung cấp một tính năng để giúp quý khách, quý khách có thể liên hệ bộ phận hỗ trợ khách hàng để được giúp đỡ đóng tài khoản của bạn từ 6 tháng đến 5 năm. Hãy bấm vào “Liên Hệ Chúng Tôi” để nhận được sự giúp đỡ từ các chuyên viên.</p>
+                        <p class="smallTitle">Giới hạn tuổi tác:</p>
+                        <p>Nguyên tắc của chúng tôi là không chấp nhận những khách hàng dưới 18 tuổi tham gia đánh bạc.Nếu như quý khách chưa đủ 18 tuổi, xin vui lòng rời khỏi trang web.</p>
+                        <p class="smallTitle">Phụ huynh kiểm soát:</p>
+                        <p>Đối với những gia đình có người thân chưa đủ tuổi thành niên thì chúng tôi khuyến khích quý khách nên lắp đặt phần mềm bảo vệ trẻ em để hạn chế thành viên chưa đủ tuổi trong gia đình tiếp xúc cũng như đặt cược vào trang mạng này.
+                            Ngoài ra, chúng tôi cũng đảm bảo rằng các hoạt động quảng cáo và khuyến mại của chúng tôi không phải là dành cho đối tượng vị thành niên.</p>
+                        <p><br></p>
+                        <p>Người sử dụng dịch vụ này phải xác định rõ rằng khu vực hoặc quốc gia mình đang sinh sống khi sử dụng dịch vụ này có hợp pháp hay không, đồng thời chịu hoàn toàn trách nhiệm. Hội viên sử dụng dịch vụ này phải tuân thủ theo các pháp lệnh cho phép tại địa phương, nếu vì sử dụng dịch vụ này mà xảy ra vấn đề vi phạm nào thì chúng tôi sẽ không chịu bất cứ trách nhiệm nào.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q4">
+                <li class="active">
+                    <!-- <div class="title">
+                        <i class="icon about"></i>
+                        <p>安全性</p>
+                        <i class="arrow_ic"></i>
+                    </div> -->
+                    <div class="textBox">
+                        <p class="smallTitle first">Bảo mật</p>
+                        <p>1. Môi trường cá cược hợp pháp:</p>
+                        <p>• Công ty chúng tôi là một trong những trang mạng cá cược chuyên nghiệp và tiên tiến nhất thế giới, đồng thời cam kết cung cấp một môi trường cá cược trên mạng hợp pháp. Ngoài ra chúng tôi sử dụng tất cả các kỹ thuật bảo mật, lắp đặt các thiết bị kỹ thuật tiên tiến, đảm bảo các dịch vụ phù hợp cho người chơi, những khu vực bị nghiêm cấm đặt cược qua mạng sẽ không được phép xuống đơn cược.</p>
+                        <p>2. Hệ thống tường lửa và gia cố bảo mật:</p>
+                        <p>• Hiện nay chúng tôi có áp dụng những hệ thống kỹ thuật tiên tiến để mã hóa thông tin và hệ thống tường lửa để đảm bảo sự an toàn, riêng tư cho người chơi đồng thời vẫn giữ được tính công bằng tuyệt đối trong trò chơi. Vì vậy chúng tôi đã sử dụng hệ thống kỹ thuật mã hóa (1024 bit RSA và 448 bit blowfish key), hệ thống có tính bảo mật cao hơn so với các hệ thống SSL của các doanh nghiệp. Đối với hệ thống mà chúng tôi đang sử dụng thì thường chỉ áp dụng cho các tổ chức tài chính lớn trên thế giới mà thôi.</p>
+                        <p>3. Giao dịch an toàn tiêu chuẩn cao:</p>
+                        <p>• Tất cả các giao dịch ngân hàng được thực hiện bởi mạng lưới bảo mật an toàn với tiêu chuẩn tài chính thế giới. Để vào thông tin tài khoản của người chơi nhất thiết phải dùng ID đăng nhập và mật khẩu của người chơi.</p>
+                        <p>4. Quyền lợi người chơi:</p>
+                        <p>• Công ty tuyệt đối không chấp nhận bất cứ hành vi lừa đảo nào, nếu có hành vi như trên tài khoản sẽ lập tức bị đóng và thu hồi tất cả các tiền thưởng, và cũng có thể tiến hành khiếu nại người chơi về hành vi thuộc trách nhiệm dân sự và hình sự, công ty luôn luôn đặt lợi ích và quyền lợi của người chơi lên hàng đầu.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q5">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon about"></i>
+                        <p>免責聲明</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p class="smallTitle first">免責聲明</p>
+                        <p>享用i88提供的服務是會員本人的意願，其風險應由會員本人承擔。參與我們服務的同時就說明會員認同i88所提供的服務是正常、合理、公正、公平的。</p>
+                        <p>如果按照會員當地法律博彩屬不合法行為，i88不提倡您參與我們的服務。在博彩被視為不合法行為的任何國家i88不提倡其國民加入。如果會員因為參與i88的服務而觸犯當地之法律，i88不負任何責任。</p>
+                        <p>雖然i88盡力確保網站提供 24 小時服務，但如果出於不可抗拒的因素使您無法訪問網站（例如，服務器遭受攻擊，海底光纜遭到破壞等），i88概不負責。或是由於第三方對公司網站和信息提供的服務（比如無線通訊的提供者等）而導致的拖延、違約、或不提供服務的情況，亦i88不提供擔保也不承擔責任。</p>
+                        <p>i88娛樂不對以下情況承擔責任（無論直接或間接產生）：</p>
+                        <p>1. 利潤的損失</p>
+                        <p>2. 生意的損失</p>
+                        <p>3. 收入的損失</p>
+                        <p>4. 機會的損失</p>
+                        <p>5. 數據的損失</p>
+                        <p>6. 商譽或名譽的損失</p>
+                        <p>7. 任何特殊的、間接或後續的損失</p>
+                        <p>i88對目前所提供的服務不提供任何明示或暗示的擔保，也不對其服務質量，適用性，完整性或精確性提供任何擔保和解釋。</p>
+                        <p>i88絕對有權臨時或永久性地立即暫停，終止，修改，刪除或添加服務內容，而無需通知會員，對因其而產生的任何損失i88概不負責。</p>
+                        <p>網站內的部分資訊與其發布的ngày和時間是相關的。所以，在特定ngày時間之後，相關資訊可能已不再準確真實，i88亦不承諾會更新該項目，因為其時效性而造成的損失，i88亦不負任何責任。</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q6">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon about"></i>
+                        <p>證照展示</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <div class="img license"></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q7">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon about"></i>
+                        <p>存取款幫助</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p class="smallTitle first">存取款幫助</p>
+                        <p>購點 如何購買點數到 i88 帳戶?</p>
+                        <p>首先您需要透過代理推薦加入 i88 會員，在您註冊完成並與您的代理聯繫後，就可登入 i88 帳戶。 當您要購買本遊戲點數時，請先與代理聯繫，您的代理將會提供您最方便的購點服務。</p>
+                        <p>換點 我怎麼兌換我的點數呢？</p>
+                        <p>換點商品請您與代理聯繫，代理會提供您最Khuyến mãi超值的換點項目。</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q8">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon about"></i>
+                        <p>相關規則</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p class="smallTitle first">相關規則</p>
+                        <p>請仔細閲讀以下您與i88娛樂城有關的法律條款。請仔細閲讀並確保您能完全理解其內容。如果您對您條款約束的權利和義務有任何疑問，請向您所屬法律管轄區域內的法律顧問尋求說明。</p>
+                        <p class="smallTitle">一般條款和規則</p>
+                        <p>1. 在註冊使用《規則與條款》涵蓋的i88 (統稱為＂i88＂，i99game.net或＂網站＂)服務之前，請您Xác nhận您已年滿18歲或以上，您代表並保證您已閲讀，並充分理解和同意接受並遵守這些規則與條款。如果您不希望接受以下規則與條款，您絶不能登記和開立帳戶，您將無法訪問遊戲軟體和得到相應服務。</p>
+                        <p>2. i88所有的產品信息，網站註冊，及提供的任何服務都在接受此《規則與條款》的前提之下。</p>
+                        <p>3. i88保留不時修訂、更新和修改本條規和博彩規則的絶對權利。上述任何修訂、更新或修改將在i88網站上的《規則與條款》中公佈。經修訂、更新或修改的本條規和博彩規則於其在博彩網站上公佈時生效。用戶在上述修訂、更新或修改公佈之後繼續通過博彩網站和博彩設備使用、連接和參與博彩服務，視為用戶同意並接受所公佈的經修改或更新的本條規和博彩規則。</p>
+                        <p>4. 這些《規則與條款》代表了您和i88 最終的合作協議，並取代所有先前交涉您與i88的協議。請您Xác nhận，您已閲讀，並同意接受這些條款及細則。</p>
+                        <p>5. 如果您對協定或i88娛樂城網站上的協定有質疑及異議，都將以本協定為準。</p>
+                        <p>6. 在允許您參加i88娛樂城遊戲活動之前，我們有權要求您提供證明您身份及年齡的有效證明。</p>
+                        <p class="smallTitle">協議</p>
+                        <p>1. 此協議涵蓋您和我們之間的各項相關協議，這些協議與您使用娛樂場玩真實貨幣遊戲或虛擬貨幣遊戲及其它遊戲相關。</p>
+                        <p>2. i88所有的產品信息，網站註冊，及提供的任何服務都在接受此《規則與條款》的前提之下。</p>
+                        <p>3. 遊戲規則會在i99game.net、軟體及網站中的其它部分列出，其中包括但不限於介紹玩法的規則、錦標賽和所有適用於特定遊戲、事件、錦標賽的其它規則，並且所有這些規則都歸併和包含在本協議規定的條款和條件中。</p>
+                        <p class="smallTitle">帳戶的使用條款</p>
+                        <p>1. 如果會員的帳戶有任何問題， i88有權暫停會員的帳戶，直到得出結果。任何爭端請立即連繫在線客服將採取一切合理步驟對待會員的爭議，直到通過調查，解決一切爭端。</p>
+                        <p>2. i88有理由在任何時候暫停或者取消您的帳戶，恕不另行通知。當取消您的帳戶餘額時，您的帳號仍有餘額，餘額將通過您最初選擇的提款方式退還給您。同時i88保留權利清空或沒收您i88娛樂城帳戶中的任何獎金或權益。</p>
+                        <p>3. 您需要保管好您的帳號和密碼安全。不得允許任何其他人或第三方，括任何未成年人使用或重複使用您的i88帳戶進行任何網站訪問及投注操作。i88將有權拒絶支付由此產生的任何獎勵或獎金。您將獨自為第三方在您的i88帳戶中產生的所有損失負責。</p>
+                        <p>4. 您同意我們掌握所有的財務出納（存款和取款）。您也同意如果我們有理由認為您有任何嫌疑參與串通,欺詐，非法的活動。我們將保留扣住您付款的權利。</p>
+                        <p>5. 您同意支付任何應該支付給我們的款項，包括通過第三方連結到我們在線娛樂場的支付。同時您同意不會做出任何索回或者取消本應支付給我們的付款，也須負擔因此原因在交易過程中產生的費用。</p>
+                        <p>6. 注意，如果存款和取款需通過電子貨幣包或者信用卡處理，本帳戶訊息必須和您的i88娛樂城註冊訊息相符。沒有第三方交易將被允許。</p>
+                        <p>7. 您可以撤回任何當前的可用餘額，資金需要2-4個工作日的時間轉入您的帳戶。任何方式支付，我們將酌情決定是否扣除在交易過程中產生的手續費。</p>
+                        <p>8. 我們將會檢查玩家數據庫，以發現“冬眠”帳戶。任何此帳戶的資金都可以提款。如果您的帳戶被我們認為是冬眠帳戶，我們將會試圖用您的註冊訊息聯繫您，例如電子郵件，手寫的信件或者電話方式。如果我們未能成功的聯繫您，12個月後，您必提供我們證明您身份的要求。</p>
+                        <p>9. 我們保留以同樣方式處理因安全原因被封存的帳戶的權利。如果我們未能成功的取得聯繫超過12個月後，您必須提供我們證明您身份的要求。</p>
+                        <p>10. 玩家應遵守服務使用者守則</p>
+                        <p>不得以任何非遊戲所附程式、或任何更改原始程式及系統上的資料、數值、封包、鎖定與解除鎖定之系統設定…等手段進行遊戲（包括涉及的任何遊戲）。
+                            禁止公開或私下傳播任何存在並可利用的遊戲Bug，請在發現該類問題時立即向官方反應。
+                            「不公平優勢」應包括但不限於：使用者利用公司或任何與協力廠商相關的軟體服務（包括涉及的任何遊戲）的錯誤，漏洞，失誤；
+                            技巧遊戲中或任何其他可能的禁止行為中使用Bots；使用協力廠商軟體或分析系統；利用的條款定義的失誤，此失誤對使用者有利或對本公司或其他方無利。
+                            公司判定會員投注異常（包括涉及的任何遊戲），公司有權（任何其他補救措施除外）凍結或暫停使用者帳戶，並進行進一步的調查。
+                            任何違反以上條款的違規行為，本公司有權根據情節輕重對違規者進行警告、停止出款或凍結帳號的處罰。
+                            本契約另有規定外，有事實足證玩家於本遊戲中違反遊戲管理規則時，本公司將於遊戲網站或遊戲進行中公告，並以 線上即時通訊方式或電子郵件通知玩家。經本公司通知改善而未改善者，本公司得依遊戲管理規則，按其情節輕重限制玩家之遊戲使用權利。
+                            共謀、作弊、欺詐以及犯罪行為以下和網站相關的行為事項（任何一項）：
+                            濫用獎金以及其他Khuyến mãi資金使用不公平的外部因素和影響 (簡稱作弊)獲取不公平的利益開設重複帳戶從事欺詐和犯罪行為 , 以上皆為禁止事項，使用者須嚴格遵守，否則視為違反條款。
+                            公司將竭盡全力監督並遏制以上以為，使用者一旦違反條款，公司會立即找出相關違反者。據此造成的損失，公司將不負任何責任，並有最終裁決權。
+                            公司有權在任何時候撤回或修改獎金或修改Khuyến mãi活動和相關具體條款與規則，並且不承擔向客戶或協力廠商解釋說明的責任。
+                            親愛的會員您好，請勿以"外掛程式套利團體下注"的方式下注單，本公司將會以 "不計輸贏，退回本金 " 方式計算，本公司在此特立公告，會員請勿以身試法。
+                            因人為或系統發生不能預測因素所導致的失誤，比方:體育下錯注單.彩球未在時間內撤單.本公司僅以會員「遊戲下注紀錄」之內容做為計算結果依據，本公司保留最終裁定權。
+                            一個會員只能持有一個帳號,重複持有或帳號非本人持有，i88有權停用帳號並沒收點數。
+                        </p>
+                        <p class="smallTitle">下注規定</p>
+                        <p>接受且Xác nhận下注 玩家帳戶 玩家需存款後方可進行投注。若發現玩家未有成功存款或成功轉帳，其帳戶投注將視為無效。</p>
+                        <p class="smallTitle">Xác nhận賭注</p>
+                        <p>一旦在i88網站內投注成功的注單，無法進行取消，唯有通過公告形式告知客戶因投注無效或錯誤的賽果等依照結算規則才可取消注單。</p>
+                        <p class="smallTitle">賭博紀錄的精準度</p>
+                        <p>請您確保您投注時的準確性，我們不會因您在本網站上投注時的出錯或疏忽承擔責任。</p>
+                        <p class="smallTitle">賭注扣除/未結算賭注</p>
+                        <p>無論結果是否證實，賭注會在您投注的時候扣除。i88將不會退還已經投注但還未開彩的注金。投注及彩金將會在遊戲完全結束後結算。如果符合要求，派彩金額將即時計入會員的帳戶。</p>
+                        <p class="smallTitle">賭注派發</p>
+                        <p>贏得的彩金將自動派發到各個玩家的帳戶內，帳戶更新的彩金不作為贏利或轉帳的依據，如果在審核中發現客戶在帳戶使用中有欺騙或使用不當的行為，i88保留將部分贏利取消並依次修正會員各帳戶餘額的權力。</p>
+                        <p class="smallTitle">會員對彩金職責</p>
+                        <p>任何由於彩金所產生的稅款或其它費用應由會員自己承擔。i88遵守相關法律條款，將會扣留會員帳戶中任何數目的餘額並對會員進行通知。所贏金額不可進行轉帳，替換或是用於索取任何其它所贏金額。</p>
+                        <p class="smallTitle">投注</p>
+                        <p>最低投注，取決於不同的遊戲。適用於所有遊戲。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

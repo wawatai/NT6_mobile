@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/64X64.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="bg"></div>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <div class="title">Trung tâm hội viên</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--會員中心-->
+        <div class="memberWrap">
+            <!--玩家資訊-->
+            <div class="user">
+                <div class="info" onclick="window.location.href='./member_info.html'">
+                    <div>
+                        <div class="account">
+                            <div class="lv">Thành viên mới</div>
+                            user898
+                        </div>
+                        <p class="date">Gia nhập  110 ngày</p>
+                    </div>
+                    <!-- <i class="arrow_ic"></i> -->
+                    <button class="infoBtn">Thông tin tài khoản</button>
+                </div>
+                <div class="wallet">
+                    <p> Ví chính: $ 500 </p>
+                    <button onclick="window.location.href='./deposit.html'">Nạp ngay</button>
+                </div>
+                <div class="btnBox">
+                    <button onclick="window.location.href='./wallet.html'">
+                        <i class="wallet_ic"></i>
+                        <div class="text">
+                             của tôi 
+                            <p>MY PURSE</p>
+                        </div>
+                    </button>
+                    <button onclick="window.location.href='./vip.html'">
+                        <i class="vip_ic"></i>
+                        <div class="text">
+                            Đặc quyền của VIP 
+                            <p>VIP</p>
+                        </div>
+                    </button>
+                </div>
+                <ul>
+                    <li onclick="window.location.href='./bettingRecord.html'">
+                        <i class="bet_ic"></i>
+                        <p>Lịch sử đặt cược</p>
+                    </li>
+                    <li onclick="window.location.href='./dealRecord.html'">
+                        <i class="deal_ic"></i>
+                        <p>Lịch sử giao dịch</p>
+                    </li>
+                    <li onclick="window.location.href='./mail.html'">
+                        <i class="mail_ic"></i>
+                        <p>Thư thông báo</p>
+                        <em class="bubble">3</em>
+                    </li>
+                    <li onclick="window.location.href='./card.html'">
+                        <i class="card_ic"></i>
+                        <p>Liên kết thẻ ngân hàng </p>
+                    </li>
+                </ul>
+            </div>
+            <!--選項條-->
+            <!-- <div class="options" onclick="window.location.href='./invitevip_page.html'">
+                <p>
+                    <i class="point_ic"></i>
+                    邀請會員
+                </p>
+                <i class="arrow_ic"></i>
+            </div> -->
+            <div class="options" onclick="window.location.href='./searchPoint.html'">
+                <p>
+                    <i class="point_ic"></i>
+                    Tra cứu điểm thưởng
+                </p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="options" onclick="window.location.href='./eventApply.html'">
+                <p>
+                    <i class="eventApply_ic"></i>
+                    Trung tâm hỗ trợ
+                </p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="options" onclick="window.location.href='./help_often.html'">
+                <p>
+                    <i class="help_ic"></i>
+                    Trung tâm hỗ trợ
+                </p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="options" onclick="window.location.href='./help_about.html'">
+                <p>
+                    <i class="about_ic"></i>
+                Thông tin trang
+                </p>
+                <i class="arrow_ic"></i>
+            </div>
+            <!-- <div class="options" onclick="window.location.href='./joinUs.html'">
+                <div>
+                    <i class="join_ic"></i>
+                    <p>加入我們</p>
+                </div>
+                <i class="arrow_ic"></i>
+            </div> -->
+            <div class="options" onclick="window.location.href='./app.html'">
+                <p>
+                    <i class="app_ic"></i>
+                    Tải APP
+                </p>
+                <i></i>
+            </div>
+            <!-- <div class="options opLang">
+                <p>
+                    <i class="lang_ic"></i>
+                    <span class="lang_tw active">繁體中文</span>
+                    <span class="lang_ch">简体中文</span>
+                </p>
+                <i class="arrow_ic"></i>
+            </div> -->
+            <div class="options" onclick="window.location.href='../index.html'">
+                <p>
+                    <i class="logout_ic"></i>
+                    Đăng xuất
+                </p>
+                <i></i>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>TRANG CHỦ</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>Khuyến mãi</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>VÍ TIỀN</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p></p>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p></p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <div class="jumpWindow langWindow">
+            <div class="title">
+                <i class="close"></i>
+            </div>
+            <ul>
+                <li class="active">繁體中文</li>
+                <li>简体中文</li>
+                <li>日本語</li>
+                <li>Việt Ngữ</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

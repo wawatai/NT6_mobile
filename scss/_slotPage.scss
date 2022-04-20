@@ -1,0 +1,143 @@
+//slot頁
+.slotWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    //slot上選單
+    .slotHeader {
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vw;
+
+        //選單
+        .listBox {
+            width: 100%;
+            height: auto;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 8px;
+                padding: 0 4%;
+                box-sizing: border-box;
+                background: $choose_Active;
+                height: 11vw;
+                overflow-x: scroll;
+
+                li {
+                    font-size: 13px;
+                    font-weight: bold;
+                    padding: 5px 1.33vw;
+                    color: $choose_Word;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: solid 2px transparent;
+                    white-space: nowrap;
+                    
+                    &.active {
+                        color: $choose_ActiveWord;
+                        border-bottom:4px solid  $choose_Border;
+                    }
+
+                    i {
+                        display: block;
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 5px;
+
+                        &.hot_ic {
+                            height: 16px;
+                        }
+
+                        &.love_ic {
+                            margin-bottom: -4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //搜尋列
+        .searchBox {
+            width: 93%;
+            height: 7.4vw;
+            margin: auto;
+            margin-bottom: 5px;
+            @include slotSearch;
+
+            .search_ic {
+                display: block;
+                width: 15px;
+                height: 15px;
+            }
+
+            input {
+                width: 100%;
+                height: auto;
+                @include slotSearch_Input;
+            }
+        }
+    }
+
+    //slot遊戲列
+    .gameList {
+        width: calc(100% - 30px);
+        height: calc(100vh - 173px);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        overflow-y: auto;
+
+        .gameBox {
+            width: calc((96vw - 30px)/2);
+            height: 54vw;
+            margin: 0 1vw 8px;
+            @include slotGameBox;
+
+            p {
+                width: 100%;
+                height: 8vw;
+                box-sizing: border-box;
+                padding: 0 15px;
+                font-size: 3.2vw;
+                font-weight: bold;
+                color: $title_2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .love {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+
+            .btnBox {
+                width: 42vw;
+                height: 17vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                display: block;
+                padding: 0 1vw;
+
+
+                button {
+                    width: 100%;
+                    height: 7vw;
+                    @include slotGameBtn_1;
+                    margin-bottom: 1vw;
+
+                    &.try {
+                        @include slotGameBtn_2;
+                    }
+                }
+            }
+        }
+    }
+}
